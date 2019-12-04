@@ -1,0 +1,50 @@
+[2019-12-03 08:19:33] production.ERROR: ErrorException: file_put_contents(C:\xampp\htdocs\smartcity_api\bootstrap\database\migrations/2019_12_03_081933_create_kategori_table.php): failed to open stream: No such file or directory in C:\xampp\htdocs\smartcity_api\vendor\illuminate\filesystem\Filesystem.php:133
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(2, 'file_put_conten...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 C:\xampp\htdocs\smartcity_api\vendor\illuminate\filesystem\Filesystem.php(133): file_put_contents('C:\\xampp\\htdocs...', '<?php\n\nuse Illu...', 0)
+#2 C:\xampp\htdocs\smartcity_api\vendor\illuminate\database\Migrations\MigrationCreator.php(59): Illuminate\Filesystem\Filesystem->put('C:\\xampp\\htdocs...', '<?php\n\nuse Illu...')
+#3 C:\xampp\htdocs\smartcity_api\vendor\illuminate\database\Console\Migrations\MigrateMakeCommand.php(110): Illuminate\Database\Migrations\MigrationCreator->create('create_kategori...', 'C:\\xampp\\htdocs...', 'kategori', true)
+#4 C:\xampp\htdocs\smartcity_api\vendor\illuminate\database\Console\Migrations\MigrateMakeCommand.php(94): Illuminate\Database\Console\Migrations\MigrateMakeCommand->writeMigration('create_kategori...', 'kategori', true)
+#5 [internal function]: Illuminate\Database\Console\Migrations\MigrateMakeCommand->handle()
+#6 C:\xampp\htdocs\smartcity_api\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\smartcity_api\vendor\illuminate\container\Util.php(34): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#8 C:\xampp\htdocs\smartcity_api\vendor\illuminate\container\BoundMethod.php(90): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#9 C:\xampp\htdocs\smartcity_api\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#10 C:\xampp\htdocs\smartcity_api\vendor\illuminate\container\Container.php(590): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#11 C:\xampp\htdocs\smartcity_api\vendor\illuminate\console\Command.php(202): Illuminate\Container\Container->call(Array)
+#12 C:\xampp\htdocs\smartcity_api\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#13 C:\xampp\htdocs\smartcity_api\vendor\illuminate\console\Command.php(189): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#14 C:\xampp\htdocs\smartcity_api\vendor\symfony\console\Application.php(1011): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\smartcity_api\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\smartcity_api\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\smartcity_api\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\smartcity_api\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\smartcity_api\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 {main} {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\xampp\\htdocs\\smartcity_api\\bootstrap\\database\\migrations/2019_12_03_081933_create_kategori_table.php): failed to open stream: No such file or directory at C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\filesystem\\Filesystem.php:133)
+[stacktrace]
+#0 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(2, 'file_put_conten...', 'C:\\\\xampp\\\\htdocs...', 133, Array)
+#1 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\filesystem\\Filesystem.php(133): file_put_contents('C:\\\\xampp\\\\htdocs...', '<?php\
+\
+use Illu...', 0)
+#2 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\database\\Migrations\\MigrationCreator.php(59): Illuminate\\Filesystem\\Filesystem->put('C:\\\\xampp\\\\htdocs...', '<?php\
+\
+use Illu...')
+#3 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateMakeCommand.php(110): Illuminate\\Database\\Migrations\\MigrationCreator->create('create_kategori...', 'C:\\\\xampp\\\\htdocs...', 'kategori', true)
+#4 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateMakeCommand.php(94): Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand->writeMigration('create_kategori...', 'kategori', true)
+#5 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand->handle()
+#6 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#7 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\container\\Util.php(34): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#10 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#11 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#12 C:\\xampp\\htdocs\\smartcity_api\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\xampp\\htdocs\\smartcity_api\\vendor\\symfony\\console\\Application.php(1011): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\xampp\\htdocs\\smartcity_api\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\xampp\\htdocs\\smartcity_api\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\xampp\\htdocs\\smartcity_api\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\xampp\\htdocs\\smartcity_api\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\xampp\\htdocs\\smartcity_api\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 {main}
+"} 
