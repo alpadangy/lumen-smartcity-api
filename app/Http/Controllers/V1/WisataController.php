@@ -20,7 +20,7 @@ class WisataController extends Controller {
     * @return \Illuminate\Http\Response
     */
     public function index(Request $request){
-        $listData = Wisata::with('lokasi','foto')->get();
+        $listData = Wisata::with('kategori','lokasi','foto')->get();
 
         $jsonData = [
             'data' => $listData,
@@ -37,7 +37,7 @@ class WisataController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function show($id, Request $request){ 
-        $listData = Wisata::with('lokasi','foto')->findOrFail($id);
+        $listData = Wisata::with('kategori','lokasi','foto')->findOrFail($id);
 
         $jsonData = [
             'data' => $listData,
