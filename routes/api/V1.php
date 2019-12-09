@@ -84,6 +84,30 @@ $router->group(['prefix' => 'wisata'], function ($app) {
     $app->delete('/{id}', 'WisataController@destroy'); 
 });
 
+$router->group(['prefix' => 'kuliner'], function ($app) {
+    $app->get('/', 'KulinerController@index');
+    $app->get('/{id}', 'KulinerController@show');
+    $app->post('/', 'KulinerController@store');
+    $app->post('/{id}', 'KulinerController@update');
+    $app->delete('/{id}', 'KulinerController@destroy'); 
+});
+
+$router->group(['prefix' => 'tempatkuliner'], function ($app) {
+    $app->get('/', 'TempatkulinerController@index');
+    $app->get('/{id}', 'TempatkulinerController@show');
+    $app->post('/', 'TempatkulinerController@store');
+    $app->post('/{id}', 'TempatkulinerController@update');
+    $app->delete('/{id}', 'TempatkulinerController@destroy'); 
+});
+
+$router->group(['prefix' => 'jeniskuliner'], function ($app) {
+    $app->get('/', 'JeniskulinerController@index');
+    $app->get('/{id}', 'JeniskulinerController@show');
+    $app->post('/', 'JeniskulinerController@store');
+    $app->post('/{id}', 'JeniskulinerController@update');
+    $app->delete('/{id}', 'JeniskulinerController@destroy'); 
+});
+
 $router->group(['prefix' => 'user'], 
     function() use ($router) {
         $router->get('/', function() {
